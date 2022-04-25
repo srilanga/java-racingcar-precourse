@@ -8,11 +8,11 @@ public class Output {
     }
 
     public static void printResult(ArrayList<String> roundResults) {
-        roundResults.forEach(System.out::println);
+        roundResults.forEach(System.out::print);
     }
 
     public static void printWinner(ArrayList<String> winners) {
-        System.out.println("최종 우승자"+String.join(",", winners));
+        System.out.println("최종 우승자: "+String.join(",", winners));
     }
 
 }

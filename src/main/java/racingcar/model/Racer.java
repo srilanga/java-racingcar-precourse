@@ -2,9 +2,8 @@ package racingcar.model;
 
 import racingcar.view.Output;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class Racer {
@@ -13,7 +12,7 @@ public class Racer {
     private int numberOfRaces;
     private ArrayList<Car> cars = new ArrayList<>();
 
-    public Racer(ArrayList<String> cars) {
+    public Racer(List<String> cars) {
         cars.forEach(car -> this.cars.add(new Car(car)));
     }
 
