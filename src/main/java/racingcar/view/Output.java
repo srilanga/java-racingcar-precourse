@@ -1,13 +1,18 @@
 package racingcar.view;
 
+import java.util.ArrayList;
+
 public class Output {
+    public static void printResultMessage() {
+        System.out.println("실행 결과");
+    }
 
-    // TODO:
-    //    실행 결과
-    //    pobi : ——
-    //    woni : ---
-    //    jun : ----
-    //    최종 우승자 : pobi  또는  최종 우승자 : pobi, jun
+    public static void printResult(ArrayList<String> roundResults) {
+        roundResults.forEach(System.out::println);
+    }
 
+    public static void printWinner(ArrayList<String> winners) {
+        System.out.println("최종 우승자"+String.join(",", winners));
+    }
 
 }

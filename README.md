@@ -32,3 +32,6 @@
 * 도메인 로직에 단위 테스트를 구현해야 한다. 단, UI(System.out,System.in,Scanner) 로직은 제외 
   * 핵심 로직을 구현하는 코드와 UI를 담당하는 로직을 분리해 구현한다. 
   * 힌트는 MVC패턴 기반으로 구현한 후 View, Controller를 제외한 Model에 대한 단위테스트를 추가하는 것에 집중한다.
+* 프로그래밍 요구사항 (신규)
+  * 일급콜렉션을 활용해 구현한다. 참고문서:https://developerfarm.wordpress.com/2012/02/01/object_calisthenics_/
+  * 모든 원시값과 문자열을 포장한다. 참고문서:https://developerfarm.wordpress.com/2012/01/27/object_calisthenics_4
